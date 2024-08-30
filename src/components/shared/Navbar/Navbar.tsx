@@ -3,10 +3,10 @@ import { DarkMode, LightMode } from '@mui/icons-material';
 import StyledNavbarButton from './StyledNavbarButton';
 
 const Navbar = () => {
-  const buttonLabels = ['Branches', 'Events', 'About Us'];
+  const buttonLabels = ['Branches', 'Events', 'About Us', 'FAQ'];
 
   return (
-    <AppBar sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
+    <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', color: 'black' }}>
           ACM@UCSB
