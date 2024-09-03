@@ -1,23 +1,25 @@
 import { Grid, Typography, Button, Box, CardMedia } from "@mui/material";
 import { ArrowRightAlt } from "@mui/icons-material";
 import TypewriterText from "./TypewriterText";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Hero = () => {
   return (
     <Box sx={{ padding: '5rem', position: 'relative' }}>
       <Grid container spacing={4} alignItems="center">
-
         <Grid item xs={12} md={6} sx={{ zIndex: 2 }}>
-
-          <div className="flex flex-col min-h-64">
+          <div className="flex flex-col min-h-60">
             <Typography variant="h2" sx={{ fontWeight: 'bold', color: '#222', paddingBottom: '10px' }}>
-              UCSB's Premier <br/> Community of all things 
+              UCSB's Premier <br /> Community of all things
             </Typography>
-            
+
             <TypewriterText />
-            
           </div>
 
+          <Typography variant="body1" sx={{ color: "gray", paddingBottom: "10px" }}>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </Typography>
 
           {/* TODO: Improve Button Styling */}
           <Button
@@ -53,6 +55,29 @@ const Hero = () => {
           </Box>
         </Grid>
       </Grid>
+
+      {/* Centered Icon with Space Above */}
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center', // Center horizontally
+          marginTop: '3rem', // Adds space above the icon
+          paddingTop: '20rem'
+        }}
+      >
+        <KeyboardArrowDownIcon
+          sx={{
+            color: "gray",
+            fontSize: "5rem", // Adjust the size to make it bigger
+            padding: "0.1rem", // Add some padding to create space around the icon
+            borderRadius: "50%", // Make the background circular
+            transition: "background-color 0.3s ease", // Smooth transition for the background color
+            "&:hover": {
+              backgroundColor: "#e0e0e0", // Light gray background on hover
+            },
+          }}
+        />
+      </Box>
     </Box>
   );
 };
