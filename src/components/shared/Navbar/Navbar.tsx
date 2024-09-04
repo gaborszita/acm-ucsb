@@ -13,8 +13,8 @@ const Navbar = () => {
         </Typography>
 
         <div className="flex align-trailing px-10 gap-[5rem]">
-          {buttonLabels.map((label) => (
-            <StyledNavbarButton label={label} />
+          {buttonLabels.map((label, index) => (
+            <StyledNavbarButton label={label} key = {index} />
           ))}
 
           {/* TODO: Implement color theme functionality */}
