@@ -2,6 +2,7 @@ import Navbar from "../components/shared/Navbar/Navbar";
 import Hero from "../components/landing/Hero";
 import AboutBlurb from "../components/body/AboutBlurb";
 import Branches from "../components/body/Branches";
+import EventsSection from "../components/body/EventsSection/EventsSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <AboutBlurb />
         <Branches />
+        <EventsSection />
       </div>
     </main>
   );

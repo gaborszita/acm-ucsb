@@ -9,8 +9,8 @@ type ACMEvent = {
 
 // This is to be updated until we have a backend to pull this data from
 const events: ACMEvent[] = [
-    {name: "Git Bash Sueno",
-        description: "Learn how to use Git Bash and the command line!"},
+    {name: "Git Bash",
+        description: "POV: cs majors learn how to socialize!"},
     {name: "Hackathon",
         description: "Join us for a 24-hour hackathon!"},
     {name: "Interview Prep",
