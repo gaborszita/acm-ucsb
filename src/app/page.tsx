@@ -1,8 +1,9 @@
 import Navbar from "../components/shared/Navbar/Navbar";
 import Hero from "../components/landing/Hero";
-import AboutBlurb from "../components/body/AboutBlurb";
-import Branches from "../components/body/Branches";
-import EventsSection from "../components/body/EventsSection/EventsSection";
+import AboutBlurb from "../components/landing/body/AboutBlurb";
+import Branches from "../components/landing/body/Branches";
+import EventsSection from "../components/landing/body/EventsSection/EventsSection";
+import Footer from "../components/shared/Footer/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutBlurb />
         <Branches />
         <EventsSection />
+        <Footer />
       </div>
     </main>
   );

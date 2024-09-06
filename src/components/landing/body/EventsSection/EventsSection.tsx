@@ -1,5 +1,5 @@
 "use client"
-import events from "../../../../public/data/events";
+import events from "../../../../../public/data/events";
 
 const EventsSection = () => {
     return (
