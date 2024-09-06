@@ -1,5 +1,5 @@
 "use client"
-import branch_data from "../../../public/data/branch_data";
+import branch_data from "../../../../public/data/branch_data";
 import Image from 'next/image';
 
 const Branches = () => {
