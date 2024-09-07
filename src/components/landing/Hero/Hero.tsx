@@ -4,13 +4,18 @@ import TypewriterText from "./TypewriterText";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Hero = () => {
+
+
+
+
+  
   return (
     <Box sx={{ padding: '5rem', position: 'relative' }}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} md={6} sx={{ zIndex: 2 }}>
           <div className="flex flex-col min-h-60">
             <Typography variant="h2" sx={{ fontWeight: 'bold', color: '#222', paddingBottom: '10px' }}>
-              UCSB's Premier <br /> Community of all things
+              UCSB&apos;s Premier <br /> Community of all things
             </Typography>
 
             <TypewriterText />
@@ -18,7 +23,7 @@ const Hero = () => {
 
           <Typography variant="body1" sx={{ color: "gray", paddingBottom: "10px" }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
           </Typography>
 
           {/* TODO: Improve Button Styling */}
