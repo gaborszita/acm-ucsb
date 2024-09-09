@@ -16,7 +16,7 @@ const Branches = () => {
                                     alt={branch.name}
                                     width={300}
                                 />
-                                <p>{branch.tagline}</p>
+                                <p>{branch.description}</p>
                             </div>
                         );
                     })}
