@@ -1,10 +1,18 @@
 import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 import { DarkMode, LightMode } from '@mui/icons-material';
+import Link from 'next/link';
 import StyledNavbarButton from './StyledNavbarButton';
 
-const Navbar = () => {
-  const buttonLabels = ['Branches', 'Events', 'About Us', 'FAQ'];
 
+const Navbar = () => {
+  const buttonLabels = {
+    about: 'About Us',
+    branches: 'Branches',
+    events: 'Events',
+    faq: 'FAQ'
+  };
+
+  
   return (
     <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -13,8 +21,10 @@ const Navbar = () => {
         </Typography>
 
         <div className="flex align-trailing px-10 gap-[5rem]">
-          {buttonLabels.map((label, index) => (
-            <StyledNavbarButton label={label} key = {index} />
+          {Object.entries(buttonLabels).map(([key, value]) => (
+            <Link href={`/#${key}`} key={key}>
+              <StyledNavbarButton label={value} key={key} />
+            </Link>
           ))}
 
           {/* TODO: Implement color theme functionality */}
