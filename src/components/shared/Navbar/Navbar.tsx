@@ -1,22 +1,27 @@
-import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
-import { DarkMode, LightMode } from '@mui/icons-material';
-import Link from 'next/link';
-import StyledNavbarButton from './StyledNavbarButton';
-
+import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
+import { DarkMode, LightMode } from "@mui/icons-material";
+import Link from "next/link";
+import StyledNavbarButton from "./StyledNavbarButton";
 
 const Navbar = () => {
   const buttonLabels = {
-    about: 'About Us',
-    branches: 'Branches',
-    events: 'Events',
-    faq: 'FAQ'
+    about: "About Us",
+    branches: "Branches",
+    events: "Events",
+    faq: "FAQ",
   };
 
-  
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', color: 'black' }}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "white", boxShadow: "none" }}
+    >
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ fontWeight: "bold", color: "black" }}
+        >
           ACM@UCSB
         </Typography>
 
@@ -28,11 +33,10 @@ const Navbar = () => {
           ))}
 
           {/* TODO: Implement color theme functionality */}
-          <IconButton sx={{ marginLeft: '3rem' }}>
+          <IconButton sx={{ marginLeft: "3rem" }}>
             <LightMode />
           </IconButton>
         </div>
-
       </Toolbar>
     </AppBar>
   );
