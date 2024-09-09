@@ -8,15 +8,12 @@ const Navbar = () => {
   return (
     <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        {/* <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', color: 'black' }}>
-          ACM@UCSB
-        </Typography> */}
         <CardMedia
           component="img"
           src="/assets/ACM logo with text 2.png"
           alt="ACM Logo"
           sx={{ 
-            height: '125px',
+            height: '110px',
             width: 'auto', 
             objectFit: 'contain'
           }}
