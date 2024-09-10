@@ -3,10 +3,13 @@ import { DarkMode, LightMode } from '@mui/icons-material';
 import StyledNavbarButton from './StyledNavbarButton';
 
 const Navbar = () => {
-  const buttonLabels = ['Branches', 'Events', 'About Us', 'FAQ'];
+  const buttonLabels = ["Branches", "Events", "About Us", "FAQ"];
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
+    <AppBar 
+      position="static" 
+      sx={{ backgroundColor: 'white', boxShadow: 'none' }}
+    >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <CardMedia
           component="img"
@@ -22,15 +25,14 @@ const Navbar = () => {
 
         <div className="flex align-trailing px-10 gap-[5rem]">
           {buttonLabels.map((label, index) => (
-            <StyledNavbarButton label={label} key = {index} />
+            <StyledNavbarButton label={label} key={index} />
           ))}
 
           {/* TODO: Implement color theme functionality */}
-          <IconButton sx={{ marginLeft: '3rem' }}>
+          <IconButton sx={{ marginLeft: "3rem" }}>
             <LightMode />
           </IconButton>
         </div>
-
       </Toolbar>
     </AppBar>
   );
