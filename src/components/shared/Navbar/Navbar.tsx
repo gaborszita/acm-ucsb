@@ -1,26 +1,31 @@
-import { AppBar, Toolbar, Typography, IconButton, CardMedia } from '@mui/material';
-import { DarkMode, LightMode } from '@mui/icons-material';
-import StyledNavbarButton from './StyledNavbarButton';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  CardMedia,
+} from "@mui/material";
+import { DarkMode, LightMode } from "@mui/icons-material";
+import StyledNavbarButton from "./StyledNavbarButton";
 
 const Navbar = () => {
   const buttonLabels = ["Branches", "Events", "About Us", "FAQ"];
 
   return (
-    <AppBar 
-      position="static" 
-      sx={{ backgroundColor: 'white', boxShadow: 'none' }}
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "white", boxShadow: "none" }}
     >
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <CardMedia
           component="img"
           src="/assets/ACM logo with text 2.png"
           alt="ACM Logo"
-          sx={{ 
-            height: '110px',
-            width: 'auto', 
-            objectFit: 'contain'
+          sx={{
+            height: "110px",
+            width: "auto",
+            objectFit: "contain",
           }}
-
         />
 
         <div className="flex align-trailing px-10 gap-[5rem]">
