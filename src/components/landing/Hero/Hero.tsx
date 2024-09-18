@@ -80,14 +80,14 @@ const Hero = () => {
             sx={{
               textAlign: "center",
               position: "absolute",
-              top: "-12rem", // Adjust to control vertical overlap
+              top: "-18rem", // Adjust to control vertical overlap
               left: "4rem", // Adjust to control horizontal overlap
               zIndex: 1,
             }}
           >
             <CardMedia
               component="img"
-              src="/assets/HeroLogo.png"
+              src="/assets/ACM logo.png"
               alt="Hero Image"
               sx={{
                 width: "120%",
